@@ -26,9 +26,7 @@ ENV OTR_PORT "1883"
 ENV OTR_USER "YOURUSER"
 ENV OTR_PASS "YOURPASSWORD"
 
-ENV OTR_HTTPHOST "0.0.0.0"
-ENV OTR_HTTPPORT 8083
-ENV OTR_TOPICS "owntracks/#"
+ADD ot-recorder /etc/default/ot-recorder
 
 # Command
 CMD ["/usr/sbin/ot-recorder"]
